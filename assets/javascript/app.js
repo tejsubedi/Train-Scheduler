@@ -1,14 +1,17 @@
 //Initialize firebase
-// var config = {
-//     apiKey: "AIzaSyA_QypGPkcjPtylRDscf7-HQl8ribnFeIs",
-//     authDomain: "time-sheet-55009.firebaseapp.com",
-//     databaseURL: "https://time-sheet-55009.firebaseio.com",
-//     storageBucket: "time-sheet-55009.appspot.com"
-//   };
-  
-//   firebase.initializeApp(config);
-  
-//   var database = firebase.database();
+var firebaseConfig = {
+    apiKey: "AIzaSyAfrq27u8r7EN328Lq_-tosbE8kM0k4ZKc",
+    authDomain: "train-scheduler-83d9c.firebaseapp.com",
+    databaseURL: "https://train-scheduler-83d9c.firebaseio.com",
+    projectId: "train-scheduler-83d9c",
+    storageBucket: "",
+    messagingSenderId: "650136534207",
+    appId: "1:650136534207:web:0d989f97a5f2c6a1"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+  var database = firebase.database();
 
 //Adding button for Train
 
@@ -39,7 +42,7 @@ $("#add-train-btn").on("click", function(event){
     };
 
     //upload database
-   // database.ref().push(trainData);
+    database.ref().push(trainData);
 
     //console log
    console.log(trainData.name);
@@ -59,7 +62,7 @@ $("#add-train-btn").on("click", function(event){
 
 });
 
-// 3. Create Firebase event for adding train to the database and a row in the html when a user adds an entry
+//3. Create Firebase event for adding train to the database and a row in the html when a user adds an entry
 database.ref().on("child_added", function(childSnapshot) {
     //console.log(childSnapshot.val());
   
