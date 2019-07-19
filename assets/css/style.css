@@ -1,0 +1,16 @@
+body {
+    background-color: beige;
+}
+#trainschedule-table th,
+td {
+    display: inline-block;
+    width: 20%;
+}
+.jumbotron {
+    background-color: black;
+    color: white;
+}
+.card-header {
+    background-color: black;
+    color: white;
+}
