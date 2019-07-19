@@ -44,14 +44,6 @@ $("#add-train-btn").on("click", function(event){
     //upload database
     database.ref().push(trainData);
 
-    //console log
-   console.log(trainData.name);
-   console.log(trainData.destination);
-   console.log(trainData.start);
-   console.log(trainData.frequency);
-   console.log("next arrival" + nextArrival);
-   console.log("minutesAway" + minutesAway);
-
 
    // Clears all of the text-boxes
    $("#train-name-input").val("");
@@ -72,11 +64,6 @@ database.ref().on("child_added", function(childSnapshot) {
     var firstTime = childSnapshot.val().start;
     var tFrequency = childSnapshot.val().frequency;
   
-    // Employee Info
-    console.log(trainName);
-    console.log(destination);
-    console.log(firstTime);
-    console.log(tFrequency);
   
     //Momentjs Time converted
     var firstTimeConverted = moment(firstTime, "HH:mm").subtract(1, "years");
