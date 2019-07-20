@@ -11,6 +11,11 @@ td {
     color: white;
 }
 .card-header {
-    background-color: black;
+    background-color: blue;
     color: white;
+}
+.card{
+    border:solid;
+    border-width:2px;
+    border-color:blue;
 }
