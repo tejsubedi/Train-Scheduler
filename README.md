@@ -9,7 +9,7 @@
  - Calculating the next arrival for trains having the first start time in future was challenging. 
 
 # Technology Used
- ** HTML, CSS, Bootstrap, JavaScript, jQuery, Moment.js, Firebase**
+ **HTML, CSS, Bootstrap, JavaScript, jQuery, Moment.js, Firebase**
 
 # Future Enhancements
  - Option to edit the train details in the table
